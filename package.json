@@ -1,0 +1,33 @@
+{
+  "name": "oizom",
+  "version": "0.1.0",
+  "description": "A WebAPI Server for Oizom",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "oizom",
+    "expressjs",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sohil4932/oizom-private-api"
+  },
+  "author": "jimishio",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb": "^2.2.33",
+    "morgan": "^1.7.0",
+    "querystring": "0.2.0",
+    "request": "2.x.x",
+    "urlencode": "^1.1.0"
+  }
+}
