@@ -33,8 +33,24 @@ cd nodejs-expressjs-signup-login-api
 npm install
 ```
 
-## Run Server
+## Run application locally
 Run below command to install dependecies required.
 ```
 node api-server.js
+```
+
+## Run application on Server using forever
+Run below command to install forever globally
+```
+npm install forever -g
+```
+
+Run application with forever
+```
+forever start /path/to/api-server.js
+```
+
+Check Status of Running application
+```
+forever list
 ```
