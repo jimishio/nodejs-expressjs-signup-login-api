@@ -169,7 +169,7 @@
                     var responseJson = {};
                     if(isEmail && isValidated){
                         //if third party business api user or not, according expiry time to be set.
-                        var apiExpiryTime = (apiCounter == -2) ? config.sessionJwtExpiry : config.sessionThirdPartyJwtExpiry;
+                        var apiExpiryTime = config.sessionJwtExpiry;
 
                         //generate jwt token 
                         var token = jwt.sign({
@@ -180,13 +180,6 @@
                         });
                         responseJson.token = token;
                         responseJson.userId = userId;
-
-                        if(userId == '58808c9db8083c029f4559f8'){
-                            responseJson.organization = {};
-                            responseJson.organization.logoUrl = 'http://terminal.oizom.com/assets/gt-01-w.png';
-                        } else {
-                            responseJson.organization = organization;
-                        }
 
                         delete responseJson.apiCounter;
                     }
