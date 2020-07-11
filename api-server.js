@@ -85,7 +85,7 @@
         // ---------------------------------------------------------
         // route middleware to authenticate and check token
         // ---------------------------------------------------------
-        app.use(authInterceptor);
+        //app.use(authInterceptor);
 
 
 

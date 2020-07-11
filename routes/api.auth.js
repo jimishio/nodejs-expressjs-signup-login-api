@@ -1,7 +1,7 @@
 /**
  * API routes related to devices database
  * use "/" route while mapping
- * @author ndkcha
+ * @author jimishio
  * @since 0.1
  * @version 0.1
  */
